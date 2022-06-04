@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url("./bg-intro-desktop.png");
+    background-color:hsl(0, 100%, 74%)  ; 
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap ;
+    max-width: 1000px;
+    min-height: 100vh;
+    padding: 20px;
+    margin: 0 auto;
+  
+}
+.container >div{
+    flex: 1;
+    padding: 0 20px;
+}
+h1{
+    font-size: 40px;
+    line-height: 50px;
+    color: #fff;
+}
+p{
+    opacity: 0.8;
+    font-size: 14px;
+    color: #fff;
+
+}
+.form-box{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 5px rgba(0,0,0, 0.2);
+    ;
+    
+    
+} 
+.box{ 
+    background-color: hsl(248, 32%, 49%);
+    padding: 15px;
+    border-radius:10px;
+    color: #fff;
+    box-shadow: 0 5px rgba(0,0,0, 0.2);
+}
+
+.box p{
+    text-align: center;
+    margin: 0;
+}
+input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px 25px;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: 1.5px solid rgb(214, 211, 211);
+    font-size:14px ;
+    font-weight: 500;
+    color: grey;   
+}
+input:focus{
+    border: 2px solid hsl(248, 32%, 49%);
+    outline: none;
+}
+
+
+
+
+.blue-half{
+    color:rgb(214, 211, 211) ;
+    
+}
+button{
+    background-color: hsl(154, 59%, 51%);
+    padding: 15px;
+    border-radius:10px;
+    color: #fff;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid hsl(154, 59%, 40%);
+    border-bottom-width: 3px;
+    box-shadow: 0 5px rgba(0,0,0, 0.1);
+    transition: transform 0.4s ease;
+    font-family: "poppins", sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+button:focus{
+    outline: none;
+}
+button:active{
+    border-bottom-width: 1px;
+   /* transform: translateY(2px);*/
+}    
+.footer{
+    font-size:8px;
+    color: rgb(214, 211, 211);
+
+}
+.footer a{
+    color: hsl(0, 100%, 74%);
+    font-weight:100px ;
+}
+.right-section{
+    margin-top: 80px;
+};
+
+
+@media  screen and (max-width:768px) {
+    .container{
+        flex-direction: column;
+    }
+    h1{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+};
+
+
+
